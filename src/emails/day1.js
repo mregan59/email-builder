@@ -1,3 +1,4 @@
+import { links, images } from '../shared/links';
 export const emails = [
     {
         name: 'Welcome',
@@ -6,7 +7,9 @@ export const emails = [
             {
                 type: 'title',
                 props: {
-                    text: 'Congratulations and <highlight>Welcome!</highlight>',
+                    text:
+                        'Congratulations and <span class="highlight">Welcome!</span>',
+                    style: {},
                 },
             },
             {
@@ -30,7 +33,7 @@ export const emails = [
                 type: 'button',
                 props: {
                     text: 'Start Meeting Singles',
-                    hre: 'https://www.catholicmatch.com/',
+                    href: links.home,
                 },
             },
             {
@@ -52,7 +55,7 @@ export const emails = [
             {
                 type: 'title',
                 props: {
-                    text: `It's time to start meeting <highlight>singles</highlight>!`,
+                    text: `It's time to start meeting <span class="highlight">singles</span>!`,
                 },
             },
             {
@@ -67,20 +70,21 @@ export const emails = [
                 type: 'paragraph',
                 props: {
                     text: `Whether you're new to online dating or have been using it for a while, we have some advice...`,
-                    style: { fontSize: 18, fontWeight: 600 },
+                    style: { fontSize: 18, fontWeight: 500 },
                 },
             },
             {
                 type: 'video',
                 props: {
-                    src: 'https://img.youtube.com/vi/amScOfplXEw/sddefault.jpg',
+                    videoLink:
+                        'https://www.youtube.com/watch?v=amScOfplXEw&feature=emb_logo',
                     roundedCorners: true,
                 },
             },
             {
                 type: 'paragraph',
                 props: {
-                    text: `For more tips on getting started with CatholicMatch, check out our FAQ page or our blog.
+                    text: `For more tips on getting started with CatholicMatch, check out our <a href='${links.faqs}'>FAQ page</a> or our <a href='${links.blog}'>blog</a>.
                         <br/><br/>
                         Sincerely,
                         <br/><br/>
@@ -94,128 +98,109 @@ export const emails = [
                         'To get the most out of the CatholicMatch community, we recommend switching to a Premium account to unlock all of our features!',
                     button: {
                         text: 'Switch to Premium',
-                        href: 'http://catholicmatch.com/subscribe',
+                        href: links.subscribe,
                     },
                 },
             },
         ],
     },
     {
-        name: 'Start Meeting Members',
-        forMembers: 'Upgraded',
+        name: 'Getting Started (upgraded)',
+        forMembers: 'Not Upgraded',
         content: [
             {
                 type: 'title',
-                props: { text: 'This is <highlight>my title</highlight>' },
+                props: {
+                    text: `It's time to start meeting <span class="highlight">singles</span>!`,
+                },
             },
             {
                 type: 'image',
                 props: {
                     src:
-                        'https://image.freepik.com/free-vector/vintage-christmas-tree-with-gifts_23-2148759404.jpg',
+                        'https://d2q86h5pvn46dj.cloudfront.net/emails/images/welcome_faceless.png',
                 },
             },
-            {
-                type: 'paragraph',
-                props: { text: 'Dear Whomever,' },
-            },
+
             {
                 type: 'paragraph',
                 props: {
-                    text:
-                        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
+                    text: `Whether you're new to online dating or have been using it for a while, we have some advice...`,
+                    style: { fontSize: 18, fontWeight: 500 },
                 },
             },
             {
-                type: 'button',
+                type: 'video',
                 props: {
-                    text: 'This is my button',
-                    hre: 'www.catholicmatch.com',
+                    videoLink:
+                        'https://www.youtube.com/watch?v=amScOfplXEw&feature=emb_logo',
+                    roundedCorners: true,
                 },
             },
             {
                 type: 'paragraph',
                 props: {
-                    text:
-                        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
-                },
-            },
-            {
-                type: 'textimage',
-                props: {
-                    header: 'This is a header',
-                    text: 'This is some text',
-                    button: { text: 'Click Me', href: 'www.google.com' },
-                    image:
-                        'https://image.freepik.com/free-vector/vintage-christmas-tree-with-gifts_23-2148759404.jpg',
-                },
-            },
-            {
-                type: 'textimage',
-                props: {
-                    text: 'This is some text',
-                    button: { text: 'Click Me', href: 'www.google.com' },
-                    image:
-                        'https://image.freepik.com/free-vector/vintage-christmas-tree-with-gifts_23-2148759404.jpg',
-                },
-            },
-            {
-                type: 'textimage',
-                props: {
-                    text: 'This is some text',
-                    imageOnRight: true,
-                    image:
-                        'https://image.freepik.com/free-vector/vintage-christmas-tree-with-gifts_23-2148759404.jpg',
+                    text: `For more tips on getting started with CatholicMatch, check out our <a href='${links.faqs}'>FAQ page</a> or our <a href='${links.blog}'>blog</a>.
+                        <br/><br/>
+                        Sincerely,
+                        <br/><br/>
+                        The CatholicMatch Team`,
                 },
             },
         ],
     },
     {
-        name: 'Date Better',
+        name: 'Online Dating Just Got Better',
         forMembers: 'Upgraded',
         content: [
             {
                 type: 'title',
-                props: { text: 'This is <highlight>my title</highlight>' },
+                props: {
+                    text:
+                        'Online Dating just got <span class="highlight">so much better</span> for you',
+                },
             },
             {
                 type: 'image',
                 props: {
-                    src:
-                        'https://image.freepik.com/free-vector/vintage-christmas-tree-with-gifts_23-2148759404.jpg',
+                    src: images.dateCoffee,
                 },
             },
-            {
-                type: 'paragraph',
-                props: { text: 'Dear Whomever,' },
-            },
+
             {
                 type: 'paragraph',
                 props: {
-                    text:
-                        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
+                    text: `Hi [name], 
+                        <br/><br/>
+                        Congratulations on your new Premium account with CatholicMatch!
+                        <br/><br/>
+                        Now it's time to start using all the features you just unlocked:`,
                 },
             },
             {
-                type: 'button',
+                type: 'image',
                 props: {
-                    text: 'This is my button',
-                    hre: 'www.catholicmatch.com',
+                    src: images.freePremiumComparison,
+                    style: { width: 500 },
                 },
             },
             {
-                type: 'paragraph',
+                type: 'title',
                 props: {
-                    text:
-                        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
+                    text: 'Use all our features to your advantage',
+                    style: {
+                        lineHeight: '36px',
+                        color: '#106fff',
+                        fontSize: 32,
+                    },
                 },
             },
             {
                 type: 'textimage',
                 props: {
-                    header: 'This is a header',
-                    text: 'This is some text',
-                    button: { text: 'Click Me', href: 'www.google.com' },
+                    header: 'Start meeting people that interest you!',
+                    text:
+                        'With unlimited messages and likes, you can initiate conversations with anyone at any time.',
                     image:
                         'https://image.freepik.com/free-vector/vintage-christmas-tree-with-gifts_23-2148759404.jpg',
                 },
@@ -223,8 +208,9 @@ export const emails = [
             {
                 type: 'textimage',
                 props: {
-                    text: 'This is some text',
-                    button: { text: 'Click Me', href: 'www.google.com' },
+                    header: 'Discover who is interested in you!',
+                    text:
+                        'Now you can view your mutual likes and matches and choose who you want to get to know better.',
                     image:
                         'https://image.freepik.com/free-vector/vintage-christmas-tree-with-gifts_23-2148759404.jpg',
                 },
@@ -232,8 +218,19 @@ export const emails = [
             {
                 type: 'textimage',
                 props: {
-                    text: 'This is some text',
-                    imageOnRight: true,
+                    header: 'Start searching for "the one"!',
+                    text:
+                        'By unlocking all of our advanced search filters, you can narrow down your results and start searching for someone you really like.',
+                    image:
+                        'https://image.freepik.com/free-vector/vintage-christmas-tree-with-gifts_23-2148759404.jpg',
+                },
+            },
+            {
+                type: 'textimage',
+                props: {
+                    header: 'Get support faster!',
+                    text:
+                        'With prioritized support, you can get answers and assistance from our support team sooner.',
                     image:
                         'https://image.freepik.com/free-vector/vintage-christmas-tree-with-gifts_23-2148759404.jpg',
                 },
@@ -246,66 +243,41 @@ export const emails = [
         content: [
             {
                 type: 'title',
-                props: { text: 'This is <highlight>my title</highlight>' },
+                props: {
+                    text: 'Complete your profile',
+                },
             },
             {
                 type: 'image',
                 props: {
                     src:
-                        'https://image.freepik.com/free-vector/vintage-christmas-tree-with-gifts_23-2148759404.jpg',
+                        'https://d2q86h5pvn46dj.cloudfront.net/emails/images/build%20profile_1.png',
                 },
             },
             {
                 type: 'paragraph',
-                props: { text: 'Dear Whomever,' },
-            },
-            {
-                type: 'paragraph',
                 props: {
-                    text:
-                        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
+                    text: `Hi [name],
+                <br/> <br/>
+                Before you can start meeting singles, you need to finish setting up your CatholicMatch profile.`,
                 },
             },
             {
                 type: 'button',
                 props: {
-                    text: 'This is my button',
-                    hre: 'www.catholicmatch.com',
+                    text: 'Complete your Profile',
+                    href: links.editProfile,
+                    center: true,
                 },
             },
             {
                 type: 'paragraph',
                 props: {
-                    text:
-                        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
-                },
-            },
-            {
-                type: 'textimage',
-                props: {
-                    header: 'This is a header',
-                    text: 'This is some text',
-                    button: { text: 'Click Me', href: 'www.google.com' },
-                    image:
-                        'https://image.freepik.com/free-vector/vintage-christmas-tree-with-gifts_23-2148759404.jpg',
-                },
-            },
-            {
-                type: 'textimage',
-                props: {
-                    text: 'This is some text',
-                    button: { text: 'Click Me', href: 'www.google.com' },
-                    image:
-                        'https://image.freepik.com/free-vector/vintage-christmas-tree-with-gifts_23-2148759404.jpg',
-                },
-            },
-            {
-                type: 'textimage',
-                props: {
-                    text: 'This is some text',
-                    imageOnRight: true,
-                    image:
-                        'https://image.freepik.com/free-vector/vintage-christmas-tree-with-gifts_23-2148759404.jpg',
+                    text: `If you have any questions about setting up your profile, visit our FAQ page or contact our support team!
+                        <br/> <br/>
+                        Sincerely,
+                        <br/> <br/>
+                        The CatholicMatch Team`,
                 },
             },
         ],

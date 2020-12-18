@@ -5,3 +5,4 @@ export * from './TextImage';
 export * from './Image';
 export * from './PremiumPrompt';
 export * from './Video';
+export * from './SuccessGrid';

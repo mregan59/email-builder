@@ -2,7 +2,7 @@ import { links, images } from '../shared/links';
 
 export const emails = [
     {
-        name: `Why haven't you upgraded? (no upgrade)`,
+        name: `It's time to meet someone!`,
         forMembers: 'no upgrade',
         content: [
             {
@@ -25,55 +25,31 @@ export const emails = [
                 props: {
                     text: `Hi [name],
                     <br/><br/>
-                    You've been online for a few days now. Is there anything that could be going better?
+                    How has online dating been going for you?
                     <br/><br/>
-                    Some of the best (and easiest) ways to improve your online dating experience are through small actions such as:`,
-                },
-            },
-            {
-                type: 'textimage',
-                props: {
-                    text: 'Sending messages to multiple users',
-                    image:
-                        'https://image.freepik.com/free-vector/vintage-christmas-tree-with-gifts_23-2148759404.jpg',
-                },
-            },
-            {
-                type: 'textimage',
-                props: {
-                    text: `Liking other users' profiles`,
-                    image:
-                        'https://image.freepik.com/free-vector/vintage-christmas-tree-with-gifts_23-2148759404.jpg',
-                },
-            },
-            {
-                type: 'textimage',
-                props: {
-                    text: 'Viewing the users who have liked your profile',
-                    image:
-                        'https://image.freepik.com/free-vector/vintage-christmas-tree-with-gifts_23-2148759404.jpg',
-                },
-            },
-            {
-                type: 'textimage',
-                props: {
-                    text: 'Utlizing all of our advanced search options!',
-                    image:
-                        'https://image.freepik.com/free-vector/vintage-christmas-tree-with-gifts_23-2148759404.jpg',
-                },
-            },
-            {
-                type: 'paragraph',
-                props: {
-                    text: `To help you date better, we're offering CatholicMatch Premium for just [insert price] so you can start utilizing all of our features now!`,
+                    If you're serious about dating, we have one simple suggestion...switch to CatholicMatch Premium!
+                    <br/><br/>
+                    When you upgrade your account, you unlock all of our features which make finding your future spouse that much easier!
+                    <br/><br/>
+                    To help you date better, we're offering CatholicMatch Premium for just [insert price] so you can start utilizing all of our features now!`,
                 },
             },
             {
                 type: 'button',
                 props: {
-                    text: 'Upgrade my Account',
+                    text: 'Switch to Premium',
                     href: links.subscribe,
                     center: true,
+                },
+            },
+            {
+                type: 'title',
+                props: {
+                    text: `Serious about find your future spouse? Here's why you should consider upgrading`,
+                    style: {
+                        fontSize: 32,
+                        lineHeight: '36px',
+                    },
                 },
             },
             {

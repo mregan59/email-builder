@@ -19,7 +19,7 @@ export const Button: React.FC<ButtonProps> = ({ text, href, style, }) => {
     )
 }
 
-export const ButtonInContainer: React.FC<ButtonInContainerProps> = ({ text, href, style, containerStyle }) => {
+export const ButtonInContainer: React.FC<ButtonInContainerProps> = ({ text, href, style, containerStyle, center }) => {
     const defaultStyle = {
         marginBottom: 16
     }
@@ -27,10 +27,10 @@ export const ButtonInContainer: React.FC<ButtonInContainerProps> = ({ text, href
     return (
         <Container alignment="center" style={{ ...defaultStyle, ...containerStyle }}>
             <Row>
-                <Column small={12} >
+                <Column small={12} style={center ? { textAlign: 'center' } : {}}>
                     <Button style={style} href={href} text={text}></Button>
                 </Column>
             </Row>
-        </Container>
+        </Container >
     )
 }

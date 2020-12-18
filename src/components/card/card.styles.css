@@ -1,0 +1,31 @@
+.grid-item {
+    width: 300px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+/* .grid-item:hover {
+    transform: scale(1.05);
+} */
+
+.grid-item-header {
+    padding-left: 8px;
+}
+
+.grid-item-scale {
+    width: 500px;
+    background: white;
+    border-radius: 15px;
+    transform-origin: top left;
+    transform: scale(0.5);
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+    transition: all 0.2s;
+}
+
+.grid-item-scale:hover {
+    transform: scale(0.52);
+}
+
+.card-wrapper {
+    transform: scale(0.9);
+    transform-origin: top center;
+}

@@ -1,50 +1,36 @@
+import { links, images } from '../shared/links';
 export const emails = [
     {
-        name: 'days 2Email',
-        forMembers: 'Upgraded',
+        name: `Here's how to meet someone (no upgrade)`,
+        forMembers: 'no upgrade',
         content: [
             {
                 type: 'title',
-                props: { text: 'This is <highlight>my title</highlight>' },
+                props: { text: `Here's how you can meet someone` },
             },
             {
                 type: 'image',
                 props: {
-                    src:
-                        'https://image.freepik.com/free-vector/vintage-christmas-tree-with-gifts_23-2148759404.jpg',
-                },
-            },
-            {
-                type: 'paragraph',
-                props: { text: 'Dear Whomever,' },
-            },
-            {
-                type: 'paragraph',
-                props: {
-                    text:
-                        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
-                },
-            },
-            {
-                type: 'button',
-                props: {
-                    text: 'This is my button',
-                    hre: 'www.catholicmatch.com',
+                    src: images.dateCoffee,
                 },
             },
             {
                 type: 'paragraph',
                 props: {
-                    text:
-                        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
+                    text: `Hi [name], 
+                <br/><br/>
+                We know online dating isn't easy, but when you switch to CatholicMatch Premium, it becomes a whole lot easier! 
+                <br/><br/>
+                With a Premium account you access:`,
                 },
             },
+
             {
                 type: 'textimage',
                 props: {
-                    header: 'This is a header',
-                    text: 'This is some text',
-                    button: { text: 'Click Me', href: 'www.google.com' },
+                    header: 'Unlimited messages & likes!',
+                    text:
+                        'A Premium subscription gives you the opportunity to message anyone at any time, so you can reach out to members who interest you.',
                     image:
                         'https://image.freepik.com/free-vector/vintage-christmas-tree-with-gifts_23-2148759404.jpg',
                 },
@@ -52,8 +38,9 @@ export const emails = [
             {
                 type: 'textimage',
                 props: {
-                    text: 'This is some text',
-                    button: { text: 'Click Me', href: 'www.google.com' },
+                    header: 'Mutual likes & matches!',
+                    text:
+                        'Knowing who is interested in YOU makes all the difference! View who liked your profile or matched with you, then decide if you want to get to know them better.',
                     image:
                         'https://image.freepik.com/free-vector/vintage-christmas-tree-with-gifts_23-2148759404.jpg',
                 },
@@ -61,290 +48,35 @@ export const emails = [
             {
                 type: 'textimage',
                 props: {
-                    text: 'This is some text',
+                    header: 'All our advanced search filters!',
+                    text:
+                        'Start searching for the right person for you. With a Premium subscription, you unlock all search options and can narrow down your results to find your ideal match.',
                     imageOnRight: true,
                     image:
                         'https://image.freepik.com/free-vector/vintage-christmas-tree-with-gifts_23-2148759404.jpg',
                 },
             },
-        ],
-    },
-    {
-        name: 'Starting Meeting Members',
-        forMembers: 'Not Upgraded',
-        content: [
             {
-                type: 'title',
-                props: { text: 'This is <highlight>my title</highlight>' },
-            },
-            {
-                type: 'image',
+                type: 'textimage',
                 props: {
-                    src:
-                        'https://image.freepik.com/free-vector/vintage-christmas-tree-with-gifts_23-2148759404.jpg',
-                },
-            },
-            {
-                type: 'paragraph',
-                props: { text: 'Dear Whomever,' },
-            },
-            {
-                type: 'paragraph',
-                props: {
+                    header: 'Prioritized support!',
                     text:
-                        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
-                },
-            },
-            {
-                type: 'button',
-                props: {
-                    text: 'This is my button',
-                    hre: 'www.catholicmatch.com',
-                },
-            },
-            {
-                type: 'paragraph',
-                props: {
-                    text:
-                        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
-                },
-            },
-            {
-                type: 'textimage',
-                props: {
-                    header: 'This is a header',
-                    text: 'This is some text',
-                    button: { text: 'Click Me', href: 'www.google.com' },
-                    image:
-                        'https://image.freepik.com/free-vector/vintage-christmas-tree-with-gifts_23-2148759404.jpg',
-                },
-            },
-            {
-                type: 'textimage',
-                props: {
-                    text: 'This is some text',
-                    button: { text: 'Click Me', href: 'www.google.com' },
-                    image:
-                        'https://image.freepik.com/free-vector/vintage-christmas-tree-with-gifts_23-2148759404.jpg',
-                },
-            },
-            {
-                type: 'textimage',
-                props: {
-                    text: 'This is some text',
+                        'Get support faster! Our support team is here to help answer any questions you have or assist you in your search, so you can date better.',
                     imageOnRight: true,
                     image:
                         'https://image.freepik.com/free-vector/vintage-christmas-tree-with-gifts_23-2148759404.jpg',
                 },
             },
-        ],
-    },
-    {
-        name: 'Start Meeting Members',
-        forMembers: 'Upgraded',
-        content: [
             {
-                type: 'title',
-                props: { text: 'This is <highlight>my title</highlight>' },
-            },
-            {
-                type: 'image',
+                type: 'premiumprompt',
                 props: {
-                    src:
-                        'https://image.freepik.com/free-vector/vintage-christmas-tree-with-gifts_23-2148759404.jpg',
-                },
-            },
-            {
-                type: 'paragraph',
-                props: { text: 'Dear Whomever,' },
-            },
-            {
-                type: 'paragraph',
-                props: {
-                    text:
-                        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
-                },
-            },
-            {
-                type: 'button',
-                props: {
-                    text: 'This is my button',
-                    hre: 'www.catholicmatch.com',
-                },
-            },
-            {
-                type: 'paragraph',
-                props: {
-                    text:
-                        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
-                },
-            },
-            {
-                type: 'textimage',
-                props: {
-                    header: 'This is a header',
-                    text: 'This is some text',
-                    button: { text: 'Click Me', href: 'www.google.com' },
-                    image:
-                        'https://image.freepik.com/free-vector/vintage-christmas-tree-with-gifts_23-2148759404.jpg',
-                },
-            },
-            {
-                type: 'textimage',
-                props: {
-                    text: 'This is some text',
-                    button: { text: 'Click Me', href: 'www.google.com' },
-                    image:
-                        'https://image.freepik.com/free-vector/vintage-christmas-tree-with-gifts_23-2148759404.jpg',
-                },
-            },
-            {
-                type: 'textimage',
-                props: {
-                    text: 'This is some text',
-                    imageOnRight: true,
-                    image:
-                        'https://image.freepik.com/free-vector/vintage-christmas-tree-with-gifts_23-2148759404.jpg',
-                },
-            },
-        ],
-    },
-    {
-        name: 'Date Better',
-        forMembers: 'Upgraded',
-        content: [
-            {
-                type: 'title',
-                props: { text: 'This is <highlight>my title</highlight>' },
-            },
-            {
-                type: 'image',
-                props: {
-                    src:
-                        'https://image.freepik.com/free-vector/vintage-christmas-tree-with-gifts_23-2148759404.jpg',
-                },
-            },
-            {
-                type: 'paragraph',
-                props: { text: 'Dear Whomever,' },
-            },
-            {
-                type: 'paragraph',
-                props: {
-                    text:
-                        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
-                },
-            },
-            {
-                type: 'button',
-                props: {
-                    text: 'This is my button',
-                    hre: 'www.catholicmatch.com',
-                },
-            },
-            {
-                type: 'paragraph',
-                props: {
-                    text:
-                        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
-                },
-            },
-            {
-                type: 'textimage',
-                props: {
-                    header: 'This is a header',
-                    text: 'This is some text',
-                    button: { text: 'Click Me', href: 'www.google.com' },
-                    image:
-                        'https://image.freepik.com/free-vector/vintage-christmas-tree-with-gifts_23-2148759404.jpg',
-                },
-            },
-            {
-                type: 'textimage',
-                props: {
-                    text: 'This is some text',
-                    button: { text: 'Click Me', href: 'www.google.com' },
-                    image:
-                        'https://image.freepik.com/free-vector/vintage-christmas-tree-with-gifts_23-2148759404.jpg',
-                },
-            },
-            {
-                type: 'textimage',
-                props: {
-                    text: 'This is some text',
-                    imageOnRight: true,
-                    image:
-                        'https://image.freepik.com/free-vector/vintage-christmas-tree-with-gifts_23-2148759404.jpg',
-                },
-            },
-        ],
-    },
-    {
-        name: 'Complete Profile',
-        forMembers: null,
-        content: [
-            {
-                type: 'title',
-                props: { text: 'This is <highlight>my title</highlight>' },
-            },
-            {
-                type: 'image',
-                props: {
-                    src:
-                        'https://image.freepik.com/free-vector/vintage-christmas-tree-with-gifts_23-2148759404.jpg',
-                },
-            },
-            {
-                type: 'paragraph',
-                props: { text: 'Dear Whomever,' },
-            },
-            {
-                type: 'paragraph',
-                props: {
-                    text:
-                        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
-                },
-            },
-            {
-                type: 'button',
-                props: {
-                    text: 'This is my button',
-                    hre: 'www.catholicmatch.com',
-                },
-            },
-            {
-                type: 'paragraph',
-                props: {
-                    text:
-                        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
-                },
-            },
-            {
-                type: 'textimage',
-                props: {
-                    header: 'This is a header',
-                    text: 'This is some text',
-                    button: { text: 'Click Me', href: 'www.google.com' },
-                    image:
-                        'https://image.freepik.com/free-vector/vintage-christmas-tree-with-gifts_23-2148759404.jpg',
-                },
-            },
-            {
-                type: 'textimage',
-                props: {
-                    text: 'This is some text',
-                    button: { text: 'Click Me', href: 'www.google.com' },
-                    image:
-                        'https://image.freepik.com/free-vector/vintage-christmas-tree-with-gifts_23-2148759404.jpg',
-                },
-            },
-            {
-                type: 'textimage',
-                props: {
-                    text: 'This is some text',
-                    imageOnRight: true,
-                    image:
-                        'https://image.freepik.com/free-vector/vintage-christmas-tree-with-gifts_23-2148759404.jpg',
+                    center: true,
+                    header:
+                        'Take Advantage of all that CatholicMatch has to offer!',
+                    button: {
+                        text: 'Switch to Premium',
+                        href: links.subscribe,
+                    },
                 },
             },
         ],

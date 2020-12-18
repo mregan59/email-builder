@@ -39,7 +39,7 @@ export const Template: React.FC<EmailProps> = ({ lang, title, headStyles, bodySt
                 table { border-collapse:separate; }
                 a, a:link, a:visited { text-decoration: none; color: #106fff; font-weight: 700; }
                 a:hover { text-decoration: underline; } .play-button {transition: all .3s; cursor:pointer;}
-                .play-button:hover {transform:scale(1.1); }
+                .play-button:hover {transform:scale(1.1); } span.highlight {color: #106fff}
                 h2,h2 a,h2 a:visited,h3,h3 a,h3 a:visited,h4,h5,h6,.t_cht { color:#000 !important; }
                 .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td { line-height: 100%; }
                 .ExternalClass { width: 100%; }

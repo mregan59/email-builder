@@ -1,0 +1,26 @@
+.fixed-container {
+    position: fixed;
+    z-index: 25;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: white;
+}
+
+.close-button {
+    position: fixed;
+    z-index: 30;
+    top: 24px;
+    right: 24px;
+    border-radius: 50rem;
+    background: #106fff;
+    color: white;
+    padding: 8px 15px;
+    font-weight: 700;
+}
+
+.close-button:hover {
+    background: #084aae;
+    cursor: pointer;
+}

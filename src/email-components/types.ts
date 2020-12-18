@@ -5,14 +5,18 @@ export interface TextProps {
     style?: React.CSSProperties;
     containerStyle?: React.CSSProperties;
     highlight?: string;
+    center?: boolean;
 }
+
 export interface ButtonProps {
     text?: string;
     href: string;
     style?: React.CSSProperties;
 }
+
 export interface ButtonInContainerProps extends ButtonProps {
     containerStyle?: React.CSSProperties;
+    center?: boolean;
 }
 
 export interface FooterProps {
@@ -29,6 +33,15 @@ export interface TextImageProps {
     image?: string;
     imageOnRight?: boolean;
     is5050?: boolean;
+}
+
+export interface PremiumPromptProps {
+    header?: string;
+    text?: string;
+    button?: ButtonProps;
+    style?: React.CSSProperties;
+    containerStyle?: React.CSSProperties;
+    center?: boolean;
 }
 
 export interface ImageProps {
