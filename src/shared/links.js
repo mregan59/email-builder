@@ -21,8 +21,26 @@ export const images = {
     dateCoffee: 'https://d2q86h5pvn46dj.cloudfront.net/emails/images/db4.png',
     buildingPuzzle:
         'https://d2q86h5pvn46dj.cloudfront.net/emails/images/build%20profile_1.png',
-    shakingHands:
-        'https://d2q86h5pvn46dj.cloudfront.net/emails/images/1199.jpg',
-    help: 'https://d2q86h5pvn46dj.cloudfront.net/emails/images/19333428.jpg',
-    dinner: 'https://d2q86h5pvn46dj.cloudfront.net/emails/images/20944678.jpg',
+    dinner: 'https://d2q86h5pvn46dj.cloudfront.net/emails/images/dinner3.png',
+    messaging: 'https://d2q86h5pvn46dj.cloudfront.net/emails/images/messaging.png',
+    expectations: 'https://d2q86h5pvn46dj.cloudfront.net/emails/images/expectations.png',
+    exhausted: 'https://d2q86h5pvn46dj.cloudfront.net/emails/images/exhausted3.png',
+    bike: 'https://d2q86h5pvn46dj.cloudfront.net/emails/images/bike2.png',
+    letter: 'https://d2q86h5pvn46dj.cloudfront.net/emails/images/letter.png',
+    rejection: 'https://d2q86h5pvn46dj.cloudfront.net/emails/images/rejection.png',
+    angels: 'https://d2q86h5pvn46dj.cloudfront.net/emails/images/snow-angels.png',
+    texting: 'https://d2q86h5pvn46dj.cloudfront.net/emails/images/talking_on_phone.png',
+    wedding: 'https://d2q86h5pvn46dj.cloudfront.net/emails/images/wedding_1.png',
+};
+export const videos = {
+    raphael:
+        'https://d2q86h5pvn46dj.cloudfront.net/emails/images/raphael_video.jpg',
+    letter1:
+        'https://d2q86h5pvn46dj.cloudfront.net/emails/images/letter_1_video.jpg',
+    letter2:
+        'https://d2q86h5pvn46dj.cloudfront.net/emails/images/letter_2_video.jpg',
+    lizJohn: 'https://d2q86h5pvn46dj.cloudfront.net/emails/images/liz_john.jpg',
+    matched:
+        'https://d2q86h5pvn46dj.cloudfront.net/emails/images/matched-preview.jpg',
+    rejection: 'https://d2q86h5pvn46dj.cloudfront.net/emails/images/rejection_video.jpg',
 };

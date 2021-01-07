@@ -9,7 +9,7 @@ export const emails = [
                 type: 'title',
                 props: {
                     text:
-                        'How is online dating going <span class="highlight">for you</span>',
+                        'How is online dating going for you?',
                     style: {},
                 },
             },
@@ -17,13 +17,13 @@ export const emails = [
                 type: 'image',
                 props: {
                     src:
-                        'https://d2q86h5pvn46dj.cloudfront.net/emails/images/exhausted.png',
+                        images.messaging
                 },
             },
             {
                 type: 'paragraph',
                 props: {
-                    text: `Hi [name],
+                    text: `Hi [[user.first_name]],
                     <br/><br/>
                     How has online dating been going for you?
                     <br/><br/>
@@ -72,8 +72,6 @@ export const emails = [
             {
                 type: 'premiumprompt',
                 props: {
-                    text:
-                        'To get the most out of the CatholicMatch community, we recommend switching to a Premium account to unlock all of our features!',
                     button: {
                         text: 'Switch to Premium',
                         href: links.subscribe,

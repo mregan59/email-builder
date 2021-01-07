@@ -1,4 +1,4 @@
-import { links, images } from '../shared/links';
+import { links, images, videos } from '../shared/links';
 export const emails = [
     {
         name: `Dear Single Self (everyone)`,
@@ -7,19 +7,19 @@ export const emails = [
             {
                 type: 'title',
                 props: {
-                    text: `Here's why they would go back and tell themselves...`,
+                    text: `Here's what they would go back and tell themselves...`,
                 },
             },
             {
                 type: 'image',
                 props: {
-                    src: images.help,
+                    src: images.letter,
                 },
             },
             {
                 type: 'paragraph',
                 props: {
-                    text: `Dear [name],
+                    text: `Dear [[user.first_name]],
                     <br/> <br/>
                     We know being single isn’t easy. But, this season of your life won’t last forever!
                     <br/> <br/>
@@ -43,6 +43,7 @@ export const emails = [
                 type: 'video',
                 props: {
                     videoLink: `https://www.youtube.com/watch?v=XsrnYUKxU8s`,
+                    videoImg: videos.letter1,
                     roundedCorners: true,
                 },
             },
@@ -60,6 +61,7 @@ export const emails = [
                 type: 'video',
                 props: {
                     videoLink: `https://www.youtube.com/watch?v=_y0YsEb175U`,
+                    videoImg: videos.letter2,
                     roundedCorners: true,
                 },
             },

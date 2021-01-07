@@ -9,21 +9,20 @@ export const emails = [
                 type: 'title',
                 props: {
                     text:
-                        'How is online dating going <span class="highlight">for you</span>',
+                        'How is online dating going for for you?',
                     style: {},
                 },
             },
             {
                 type: 'image',
                 props: {
-                    src:
-                        'https://d2q86h5pvn46dj.cloudfront.net/emails/images/exhausted.png',
+                    src: images.messaging
                 },
             },
             {
                 type: 'paragraph',
                 props: {
-                    text: `Hi [name],
+                    text: `Hi [[user.first_name]],
                     <br/><br/>
                     You've been online for a few days now. Is there anything that could be going better?
                     <br/><br/>
@@ -34,32 +33,28 @@ export const emails = [
                 type: 'textimage',
                 props: {
                     text: 'Sending messages to multiple users',
-                    image:
-                        'https://image.freepik.com/free-vector/vintage-christmas-tree-with-gifts_23-2148759404.jpg',
+
                 },
             },
             {
                 type: 'textimage',
                 props: {
                     text: `Liking other users' profiles`,
-                    image:
-                        'https://image.freepik.com/free-vector/vintage-christmas-tree-with-gifts_23-2148759404.jpg',
+
                 },
             },
             {
                 type: 'textimage',
                 props: {
                     text: 'Viewing the users who have liked your profile',
-                    image:
-                        'https://image.freepik.com/free-vector/vintage-christmas-tree-with-gifts_23-2148759404.jpg',
+
                 },
             },
             {
                 type: 'textimage',
                 props: {
                     text: 'Utlizing all of our advanced search options!',
-                    image:
-                        'https://image.freepik.com/free-vector/vintage-christmas-tree-with-gifts_23-2148759404.jpg',
+
                 },
             },
             {
@@ -96,8 +91,6 @@ export const emails = [
             {
                 type: 'premiumprompt',
                 props: {
-                    text:
-                        'To get the most out of the CatholicMatch community, we recommend switching to a Premium account to unlock all of our features!',
                     button: {
                         text: 'Switch to Premium',
                         href: links.subscribe,

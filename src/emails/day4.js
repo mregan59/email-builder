@@ -11,7 +11,7 @@ export const emails = [
                 type: 'title',
                 props: {
                     text:
-                        'Date Better with <span class="highlight">CatholicMatch</span>',
+                        'Date Better with CatholicMatch',
                     style: {},
                 },
             },
@@ -24,7 +24,7 @@ export const emails = [
             {
                 type: 'paragraph',
                 props: {
-                    text: `Hi [name],
+                    text: `Hi [[user.first_name]],
                     <br/><br/>
                     We’re familiar with the highs and lows of online dating and we want to help you navigate them.
                     <br/><br/>
@@ -36,10 +36,9 @@ export const emails = [
                 props: {
                     header: 'Get the advice you actually need.',
                     text:
-                        'We know the unique struggle of dating after a divorce. Check out our blog and find resources on everything from the annulment process to finding love again.',
+                        'We know the unique struggles of Catholic dating. Check out our blog and find resources on everything from planning a first date to surviving a breakup!',
                     button: { text: 'Visit our Blog', href: links.blog },
-                    image:
-                        'https://image.freepik.com/free-vector/vintage-christmas-tree-with-gifts_23-2148759404.jpg',
+
                 },
             },
             {
@@ -51,8 +50,7 @@ export const emails = [
                         text: 'Contact our support team',
                         href: links.support,
                     },
-                    image:
-                        'https://image.freepik.com/free-vector/vintage-christmas-tree-with-gifts_23-2148759404.jpg',
+
                 },
             },
             {
@@ -65,8 +63,7 @@ export const emails = [
                         text: 'Learn more about safety',
                         href: links.safety,
                     },
-                    image:
-                        'https://image.freepik.com/free-vector/vintage-christmas-tree-with-gifts_23-2148759404.jpg',
+
                 },
             },
             {
@@ -89,7 +86,7 @@ export const emails = [
                 type: 'title',
                 props: {
                     text:
-                        'Date Better with <span class="highlight">CatholicMatch</span>',
+                        'Date Better with CatholicMatch',
                     style: {},
                 },
             },
@@ -102,7 +99,7 @@ export const emails = [
             {
                 type: 'paragraph',
                 props: {
-                    text: `Hi [name],
+                    text: `Hi [[user.first_name]],
                     <br/><br/>
                     We’re familiar with the highs and lows of online dating and we want to help you navigate them.
                     <br/><br/>
@@ -114,10 +111,9 @@ export const emails = [
                 props: {
                     header: 'Get the advice you actually need.',
                     text:
-                        'We know the unique struggle of dating after a divorce. Check out our blog and find resources on everything from the annulment process to finding love again.',
+                        'We know the unique struggles of Catholic dating. Check out our blog and find resources on everything from planning a first date to surviving a breakup!',
                     button: { text: 'Visit our Blog', href: links.blog },
-                    image:
-                        'https://image.freepik.com/free-vector/vintage-christmas-tree-with-gifts_23-2148759404.jpg',
+
                 },
             },
             {
@@ -129,8 +125,7 @@ export const emails = [
                         text: 'Contact our support team',
                         href: links.support,
                     },
-                    image:
-                        'https://image.freepik.com/free-vector/vintage-christmas-tree-with-gifts_23-2148759404.jpg',
+
                 },
             },
             {
@@ -143,15 +138,14 @@ export const emails = [
                         text: 'Learn more about safety',
                         href: links.safety,
                     },
-                    image:
-                        'https://image.freepik.com/free-vector/vintage-christmas-tree-with-gifts_23-2148759404.jpg',
+
                 },
             },
             {
                 type: 'premiumprompt',
                 props: {
                     header: 'Get serious about dating.',
-                    text: `Stop waiting for messages to unlock. Switch to a Premium account and unlock all of our features, including unlimited likes and messaging!`,
+                    text: `Stop waiting for messages to unlock. Get our New Member Discount and unlock all of our features, including unlimited likes and messaging, for $9.99!`,
                     button: {
                         text: 'Upgrade your account',
                         href: links.subscribe,
@@ -178,7 +172,7 @@ export const emails = [
                 type: 'title',
                 props: {
                     text:
-                        'Date Better with <span class="highlight">CatholicMatch</span>',
+                        'Date Better with CatholicMatch',
                     style: {},
                 },
             },
@@ -191,7 +185,7 @@ export const emails = [
             {
                 type: 'paragraph',
                 props: {
-                    text: `Hi [name],
+                    text: `Hi [[user.first_name]],
                     <br/><br/>
                     We’re familiar with the highs and lows of dating after a divorce and we want to help you navigate them.
                     <br/><br/>
@@ -205,8 +199,7 @@ export const emails = [
                     text:
                         'We know the unique struggle of dating after a divorce. Check out our blog and find resources on everything from the annulment process to finding love again.',
                     button: { text: 'Visit our Blog', href: links.blog },
-                    image:
-                        'https://image.freepik.com/free-vector/vintage-christmas-tree-with-gifts_23-2148759404.jpg',
+
                 },
             },
             {
@@ -218,8 +211,7 @@ export const emails = [
                         text: 'Contact our support team',
                         href: links.support,
                     },
-                    image:
-                        'https://image.freepik.com/free-vector/vintage-christmas-tree-with-gifts_23-2148759404.jpg',
+
                 },
             },
             {
@@ -232,8 +224,7 @@ export const emails = [
                         text: 'Learn more about safety',
                         href: links.safety,
                     },
-                    image:
-                        'https://image.freepik.com/free-vector/vintage-christmas-tree-with-gifts_23-2148759404.jpg',
+
                 },
             },
 
@@ -257,7 +248,7 @@ export const emails = [
                 type: 'title',
                 props: {
                     text:
-                        'Date Better with <span class="highlight">CatholicMatch</span>',
+                        'Date Better with CatholicMatch',
                     style: {},
                 },
             },
@@ -270,7 +261,7 @@ export const emails = [
             {
                 type: 'paragraph',
                 props: {
-                    text: `Hi [name],
+                    text: `Hi [[user.first_name]],
                     <br/><br/>
                     We’re familiar with the highs and lows of dating after a divorce and we want to help you navigate them.
                     <br/><br/>
@@ -284,8 +275,7 @@ export const emails = [
                     text:
                         'We know the unique struggle of dating after a divorce. Check out our blog and find resources on everything from the annulment process to finding love again.',
                     button: { text: 'Visit our Blog', href: links.blog },
-                    image:
-                        'https://image.freepik.com/free-vector/vintage-christmas-tree-with-gifts_23-2148759404.jpg',
+
                 },
             },
             {
@@ -297,8 +287,7 @@ export const emails = [
                         text: 'Contact our support team',
                         href: links.support,
                     },
-                    image:
-                        'https://image.freepik.com/free-vector/vintage-christmas-tree-with-gifts_23-2148759404.jpg',
+
                 },
             },
             {
@@ -311,15 +300,14 @@ export const emails = [
                         text: 'Learn more about safety',
                         href: links.safety,
                     },
-                    image:
-                        'https://image.freepik.com/free-vector/vintage-christmas-tree-with-gifts_23-2148759404.jpg',
+
                 },
             },
             {
                 type: 'premiumprompt',
                 props: {
                     header: 'Get serious about dating.',
-                    text: `Stop waiting for messages to unlock. Switch to a Premium account and unlock all of our features, including unlimited likes and messaging!`,
+                    text: `Stop waiting for messages to unlock. Get our New Member Discount and unlock all of our features, including unlimited likes and messaging, for $9.99!`,
                     button: {
                         text: 'Upgrade your account',
                         href: links.subscribe,
@@ -346,7 +334,7 @@ export const emails = [
                 type: 'title',
                 props: {
                     text:
-                        'Date Better with <span class="highlight">CatholicMatch</span>',
+                        'Date Better with CatholicMatch',
                     style: {},
                 },
             },
@@ -359,7 +347,7 @@ export const emails = [
             {
                 type: 'paragraph',
                 props: {
-                    text: `Hi [name],
+                    text: `Hi [[user.first_name]],
                     <br/><br/>
                     We’re familiar with the highs and lows of dating as an older single and we want to help you navigate them.
                     <br/><br/>
@@ -371,10 +359,9 @@ export const emails = [
                 props: {
                     header: 'Get the advice you actually need.',
                     text:
-                        'We know the unique struggle of dating after a divorce. Check out our blog and find resources on everything from the annulment process to finding love again.',
+                        'We know the unique struggle of being an older single. Check out our blog and find resources on everything from prolonged singleness to keeping your hopes up!',
                     button: { text: 'Visit our Blog', href: links.blog },
-                    image:
-                        'https://image.freepik.com/free-vector/vintage-christmas-tree-with-gifts_23-2148759404.jpg',
+
                 },
             },
             {
@@ -386,8 +373,7 @@ export const emails = [
                         text: 'Contact our support team',
                         href: links.support,
                     },
-                    image:
-                        'https://image.freepik.com/free-vector/vintage-christmas-tree-with-gifts_23-2148759404.jpg',
+
                 },
             },
             {
@@ -400,8 +386,7 @@ export const emails = [
                         text: 'Learn more about safety',
                         href: links.safety,
                     },
-                    image:
-                        'https://image.freepik.com/free-vector/vintage-christmas-tree-with-gifts_23-2148759404.jpg',
+
                 },
             },
             {
@@ -424,7 +409,7 @@ export const emails = [
                 type: 'title',
                 props: {
                     text:
-                        'Date Better with <span class="highlight">CatholicMatch</span>',
+                        'Date Better with CatholicMatch',
                     style: {},
                 },
             },
@@ -437,7 +422,7 @@ export const emails = [
             {
                 type: 'paragraph',
                 props: {
-                    text: `Hi [name],
+                    text: `Hi [[user.first_name]],
                     <br/><br/>
                     We’re familiar with the highs and lows of dating as an older single and we want to help you navigate them.
                     <br/><br/>
@@ -449,10 +434,9 @@ export const emails = [
                 props: {
                     header: 'Get the advice you actually need.',
                     text:
-                        'We know the unique struggle of dating after a divorce. Check out our blog and find resources on everything from the annulment process to finding love again.',
+                        'We know the unique struggle of being an older single. Check out our blog and find resources on everything from prolonged singleness to keeping your hopes up!',
                     button: { text: 'Visit our Blog', href: links.blog },
-                    image:
-                        'https://image.freepik.com/free-vector/vintage-christmas-tree-with-gifts_23-2148759404.jpg',
+
                 },
             },
             {
@@ -464,8 +448,7 @@ export const emails = [
                         text: 'Contact our support team',
                         href: links.support,
                     },
-                    image:
-                        'https://image.freepik.com/free-vector/vintage-christmas-tree-with-gifts_23-2148759404.jpg',
+
                 },
             },
             {
@@ -478,15 +461,14 @@ export const emails = [
                         text: 'Learn more about safety',
                         href: links.safety,
                     },
-                    image:
-                        'https://image.freepik.com/free-vector/vintage-christmas-tree-with-gifts_23-2148759404.jpg',
+
                 },
             },
             {
                 type: 'premiumprompt',
                 props: {
                     header: 'Get serious about dating.',
-                    text: `Stop waiting for messages to unlock. Switch to a Premium account and unlock all of our features, including unlimited likes and messaging!`,
+                    text: `Stop waiting for messages to unlock. Get our New Member Discount and unlock all of our features, including unlimited likes and messaging, for $9.99!`,
                     button: {
                         text: 'Upgrade your account',
                         href: links.subscribe,

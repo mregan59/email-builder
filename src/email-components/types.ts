@@ -33,6 +33,7 @@ export interface TextImageProps {
     image?: string;
     imageOnRight?: boolean;
     is5050?: boolean;
+    headerStyle?: React.CSSProperties;
 }
 
 export interface PremiumPromptProps {

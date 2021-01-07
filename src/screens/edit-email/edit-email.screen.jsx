@@ -5,36 +5,28 @@ import OnboardingTemplate from '../../templates/OnboardingTemplate';
 import { emails as day1Emails } from '../../emails/day1';
 import { emails as day2Emails } from '../../emails/day2';
 import { FlexBox } from '../../components';
-import { Home } from '../../screens';
+import { Home } from '..';
 import './edit-email.style.css';
-import {
-    useHistory,
-} from "react-router-dom";
+import { useHistory } from 'react-router-dom';
 
-interface EditEmailProps {
-    email: any;
-    onClick: any;
-}
-
-
-export const EditEmail: React.FC<EditEmailProps> = ({ email, onClick }) => {
+export const EditEmail = ({ email, onClick }) => {
     const history = useHistory();
+    const cardRef = useRef(null);
     const onClose = () => {
         onClick();
         history.go(-1);
-    }
+    };
     if (!email) {
         return null;
     }
     return (
-
         <FlexBox flex1 row className="fixed-container">
             <div className="close-button" onClick={onClose}>
                 Close
-                </div>
+            </div>
             <FlexBox w100 aligncenter style={{ overflowY: 'scroll' }}>
                 <OnboardingTemplate data={email.content}></OnboardingTemplate>
             </FlexBox>
         </FlexBox>
     );
-}
+};

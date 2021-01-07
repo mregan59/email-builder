@@ -1,4 +1,4 @@
-import { links, images } from '../shared/links';
+import { links, images, videos } from '../shared/links';
 export const emails = [
     {
         name: `Matched (everyone)`,
@@ -13,7 +13,7 @@ export const emails = [
             {
                 type: 'paragraph',
                 props: {
-                    text: `Hi [name],
+                    text: `Hi [[user.first_name]],
                     <br/> <br/>
                     To help you kickstart your online dating journey, we have a special gift for you! 
                     <br/> <br/>
@@ -31,6 +31,36 @@ export const emails = [
                     src: images.help,
                 },
             },
+
+
+            {
+                type: 'grid',
+                props: {
+                    data:[
+                        {
+                        text: 'Connect with other singles.',
+                        image: images.peopleTalking,
+
+                    },
+                        {
+                        text: 'Attract the right person.',
+                        image: images.texting,
+
+                    },
+                        {
+                        text: 'Set up an awesome first date',
+                        image: images.dateCoffee,
+
+                    },
+                        {
+                        text:  'Start planning your future.',
+                        image: images.wedding,
+
+                    },
+                ]
+
+                },
+            },
             {
                 type: 'title',
                 props: {
@@ -44,7 +74,7 @@ export const emails = [
             {
                 type: 'video',
                 props: {
-                    videoPreviewImg: `https://d2q86h5pvn46dj.cloudfront.net/emails/images/matched-preview.png`,
+                    videoImg: videos.matched,
                     videoLink: `https://www.facebook.com/watch/?v=10156334148703044`,
                     roundedCorners: true,
                 },

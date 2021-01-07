@@ -8,20 +8,20 @@ export const emails = [
             {
                 type: 'title',
                 props: {
-                    text: `Here's what to expect when you start <span class="highlight">dating online</span>`,
+                    text: `Here's what to expect when you start <span class="highlight">dating online...</span>`,
                     style: {},
                 },
             },
             {
                 type: 'image',
                 props: {
-                    src: images.help,
+                    src: images.expectations,
                 },
             },
             {
                 type: 'paragraph',
                 props: {
-                    text: `Hi [name], 
+                    text: `Hi [[user.first_name]], 
                     <br/><br/>
                     What have you been told about online dating?
                     <br/><br/>
@@ -37,8 +37,7 @@ export const emails = [
                         text: 'Read more about dating with patience',
                         href: links.blog,
                     },
-                    image:
-                        'https://image.freepik.com/free-vector/vintage-christmas-tree-with-gifts_23-2148759404.jpg',
+
                 },
             },
             {
@@ -50,8 +49,7 @@ export const emails = [
                         text: 'Read more about getting yourself out of there',
                         href: links.support,
                     },
-                    image:
-                        'https://image.freepik.com/free-vector/vintage-christmas-tree-with-gifts_23-2148759404.jpg',
+
                 },
             },
             {
@@ -63,8 +61,7 @@ export const emails = [
                         text: 'Read more about stopping negative thoughts',
                         href: links.safety,
                     },
-                    image:
-                        'https://image.freepik.com/free-vector/vintage-christmas-tree-with-gifts_23-2148759404.jpg',
+
                 },
             },
             {

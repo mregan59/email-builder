@@ -1,4 +1,4 @@
-import { links, images } from '../shared/links';
+import { links, images, videos } from '../shared/links';
 export const emails = [
     {
         name: `Rejection (everyone)`,
@@ -11,13 +11,14 @@ export const emails = [
             {
                 type: 'image',
                 props: {
-                    src: images.help,
+                    src: images.rejection,
+                    style: {width:200}
                 },
             },
             {
                 type: 'paragraph',
                 props: {
-                    text: `Dear [name],
+                    text: `Dear [[user.first_name]],
                     <br/> <br/>
                     Rejection is never fun. But, it’s an unavoidable part of the dating process. No matter who you are or how you date...you’re going to be rejected sometimes. But, that’s okay. 
                     <br/> <br/>
@@ -39,6 +40,7 @@ export const emails = [
                 type: 'video',
                 props: {
                     videoLink: `https://www.youtube.com/watch?v=Igi3Xh9ddv4`,
+                    videoImg: videos.rejection,
                     roundedCorners: true,
                 },
             },

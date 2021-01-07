@@ -5,7 +5,7 @@ import { TextImageProps } from './types';
 
 
 
-export const TextImage: React.FC<TextImageProps> = ({ header, text, button, style, containerStyle, image, imageOnRight, is5050 }) => {
+export const TextImage: React.FC<TextImageProps> = ({ header, text, button, style, headerStyle, containerStyle, image, imageOnRight, is5050 }) => {
 
     const defaultContainerStyle = {
         marginTop: 16,
@@ -15,13 +15,13 @@ export const TextImage: React.FC<TextImageProps> = ({ header, text, button, styl
     return (
         <Container alignment="center" style={{ ...defaultContainerStyle, ...containerStyle }}>
             <Row>
-                {/* {!imageOnRight && <Column small={is5050 ? 6 : 3}>
-                    <Image style={{ width: 120 }} src="https://image.freepik.com/free-vector/vintage-christmas-tree-with-gifts_23-2148759404.jpg"></Image>
-                </Column>} */}
-                <Column small={is5050 ? 12 : 12}>
+                {(image && !imageOnRight) && <Column small={is5050 ? 6 : 3}>
+                    <Image style={{ width: 120 }} src={image}></Image>
+                </Column>}
+                <Column small={!image ? 12 : is5050 ? 6 : 9}>
                     <Row>
                         {header && <Column small={12} style={{ padding: 0, marginBottom: 6 }}>
-                            <Text style={{ fontSize: 20, fontWeight: 700, }}>{header}</Text>
+                            <Text style={{ fontSize: 20, fontWeight: 700, ...headerStyle }}>{header}</Text>
                         </Column>}
                         {text && <Column small={12} style={{ padding: 0 }}>
                             <Text style={{ color: '#000' }}>{text}</Text>
@@ -31,9 +31,9 @@ export const TextImage: React.FC<TextImageProps> = ({ header, text, button, styl
                         </Column>}
                     </Row>
                 </Column>
-                {/* {imageOnRight && <Column small={is5050 ? 6 : 3}>
-                    <Image style={{ width: 120 }} src="https://image.freepik.com/free-vector/vintage-christmas-tree-with-gifts_23-2148759404.jpg"></Image>
-                </Column>} */}
+                {(image && imageOnRight) && <Column small={is5050 ? 6 : 3}>
+                    <Image style={{ width: 120 }} src={image}></Image>
+                </Column>}
             </Row>
         </Container>
     )

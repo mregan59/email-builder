@@ -6,3 +6,4 @@ export * from './Image';
 export * from './PremiumPrompt';
 export * from './Video';
 export * from './SuccessGrid';
+export * from './Grid';

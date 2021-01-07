@@ -1,4 +1,4 @@
-import { links } from '../shared/links';
+import { links, images, videos } from '../shared/links';
 
 const createEmail = ({ name, text, type, showUpgrade }) => {
     return {
@@ -8,7 +8,7 @@ const createEmail = ({ name, text, type, showUpgrade }) => {
             {
                 type: 'title',
                 props: {
-                    text: `Find your <span class="highlight">love story</span>`,
+                    text: `Find your <span class="highlight">love story!</span>`,
                     style: {},
                 },
             },
@@ -16,7 +16,7 @@ const createEmail = ({ name, text, type, showUpgrade }) => {
                 type: 'image',
                 props: {
                     src:
-                        'https://d2q86h5pvn46dj.cloudfront.net/emails/images/454.jpg',
+                        images.bike,
                 },
             },
             {
@@ -49,6 +49,7 @@ const createEmail = ({ name, text, type, showUpgrade }) => {
                 type: 'video',
                 props: {
                     videoLink: 'https://www.youtube.com/watch?v=Vi5ODRr96CA',
+                    videoImg: videos.lizJohn,
                     roundedCorners: true,
                 },
             },
@@ -66,7 +67,7 @@ const createEmail = ({ name, text, type, showUpgrade }) => {
                 ? {
                       type: 'premiumprompt',
                       props: {
-                          text: `Right now, you can upgrade to CatholicMatch Premium for [insert upgrade offer]! Take advantage of this offer now!`,
+                          text: `Right now, you can upgrade to CatholicMatch Premium for $9.99! Take advantage of this offer now!`,
                           button: {
                               text: 'Upgrade your account',
                               href: links.subscribe,
@@ -81,27 +82,27 @@ const createEmail = ({ name, text, type, showUpgrade }) => {
 export const emails = [
     createEmail({
         name: 'Success Stories (divorce no upgrade)',
-        text: `Hi [name],
+        text: `Hi [[user.first_name]],
         <br/><br/>
         Each week we are flooded with emails from couples who met on CatholicMatch and have recently gotten engaged or married. While their stories are all different, many of them have been divorced and went through the annulment process.
         <br/><br/>
         Their stories of finding love following a divorce can provide you with inspiration as you navigate the world of online dating. They will also remind you that your love story could be just around the corner…`,
-        type: 'divorce',
+        type: 'divorced',
         showUpgrade: true,
     }),
     createEmail({
         name: 'Success Stories (divorce upgraded)',
-        text: `Hi [name],
+        text: `Hi [[user.first_name]],
         <br/><br/>
         Each week we are flooded with emails from couples who met on CatholicMatch and have recently gotten engaged or married. While their stories are all different, many of them have been divorced and went through the annulment process.
         <br/><br/>
         Their stories of finding love following a divorce can provide you with inspiration as you navigate the world of online dating. They will also remind you that your love story could be just around the corner…`,
-        type: 'divorce',
+        type: 'divorced',
         showUpgrade: false,
     }),
     createEmail({
         name: 'Success Stories (seniors no upgrade)',
-        text: `Hi [name],
+        text: `Hi [[user.first_name]],
         <br/><br/>
         Each week we are flooded with emails from couples who met on CatholicMatch and have recently gotten engaged or married. While their stories are all different, many of them met online in their later years.
         <br/><br/>
@@ -111,7 +112,7 @@ export const emails = [
     }),
     createEmail({
         name: 'Success Stories (seniors upgraded)',
-        text: `Hi [name],
+        text: `Hi [[user.first_name]],
         <br/><br/>
         Each week we are flooded with emails from couples who met on CatholicMatch and have recently gotten engaged or married. While their stories are all different, many of them met online in their later years.
         <br/><br/>
@@ -121,7 +122,7 @@ export const emails = [
     }),
     createEmail({
         name: 'Success Stories (no upgrade)',
-        text: `Hi [name],
+        text: `Hi [[user.first_name]],
         <br/><br/>
         Each week we are flooded with emails from couples who met on CatholicMatch and have recently gotten married.
         <br/><br/>
@@ -131,7 +132,7 @@ export const emails = [
     }),
     createEmail({
         name: 'Success Stories (upgraded)',
-        text: `Hi [name],
+        text: `Hi [[user.first_name]],
         <br/><br/>
         Each week we are flooded with emails from couples who met on CatholicMatch and have recently gotten married.
         <br/><br/>

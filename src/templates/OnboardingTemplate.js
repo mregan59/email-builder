@@ -22,6 +22,7 @@ import {
     PremiumPrompt,
     Video,
     SuccessGrid,
+    Grid,
 } from '../email-components';
 // Data here represents the Example Data we might get passed to from the backend.
 // This can be anything and you need to define it beforehand
@@ -45,6 +46,8 @@ const OnboardingTemplate = ({ data }) => {
                 return <Video {...props}></Video>;
             case 'successgrid':
                 return <SuccessGrid {...props}></SuccessGrid>;
+            case 'grid':
+                return <Grid {...props}></Grid>;
             default:
                 return null;
         }

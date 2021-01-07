@@ -1,4 +1,4 @@
-import { links, images } from '../shared/links';
+import { links, images, videos } from '../shared/links';
 export const emails = [
     {
         name: 'Welcome',
@@ -9,7 +9,6 @@ export const emails = [
                 props: {
                     text:
                         'Congratulations and <span class="highlight">Welcome!</span>',
-                    style: {},
                 },
             },
             {
@@ -22,7 +21,7 @@ export const emails = [
             {
                 type: 'paragraph',
                 props: {
-                    text: `Dear Marian,
+                    text: `Dear [[user.first_name]],
                     <br/><br/>
                     You've just joined a community of singles who are looking for the same thing you are: a spouse who shares your faith!
                     <br/> <br/>
@@ -39,7 +38,7 @@ export const emails = [
             {
                 type: 'paragraph',
                 props: {
-                    text: `We want to ensure that you feel supported throughout your online dating experience. If you have any questions, visit our <a href="www.google.com">FAQ page</a> or contact our <a href="www.google.com">support team</a>.
+                    text: `We want to ensure that you feel supported throughout your online dating experience. If you have any questions, visit our <a href="${links.faqs}">FAQ page</a> or contact our <a href="${links.support}">support team</a>.
                         <br/><br/>
                         Sincerely,
                         <br/> <br/>
@@ -55,7 +54,7 @@ export const emails = [
             {
                 type: 'title',
                 props: {
-                    text: `It's time to start meeting <span class="highlight">singles</span>!`,
+                    text: `It's time to start meeting Catholic Singles!`,
                 },
             },
             {
@@ -65,7 +64,6 @@ export const emails = [
                         'https://d2q86h5pvn46dj.cloudfront.net/emails/images/welcome_faceless.png',
                 },
             },
-
             {
                 type: 'paragraph',
                 props: {
@@ -78,6 +76,7 @@ export const emails = [
                 props: {
                     videoLink:
                         'https://www.youtube.com/watch?v=amScOfplXEw&feature=emb_logo',
+                    videoImg: videos.raphael,
                     roundedCorners: true,
                 },
             },
@@ -94,9 +93,7 @@ export const emails = [
             {
                 type: 'premiumprompt',
                 props: {
-                    text:
-                        'To get the most out of the CatholicMatch community, we recommend switching to a Premium account to unlock all of our features!',
-                    button: {
+                   button: {
                         text: 'Switch to Premium',
                         href: links.subscribe,
                     },
@@ -111,7 +108,7 @@ export const emails = [
             {
                 type: 'title',
                 props: {
-                    text: `It's time to start meeting <span class="highlight">singles</span>!`,
+                    text: `It's time to start meeting Catholic Singles!`,
                 },
             },
             {
@@ -133,8 +130,9 @@ export const emails = [
                 type: 'video',
                 props: {
                     videoLink:
-                        'https://www.youtube.com/watch?v=amScOfplXEw&feature=emb_logo',
-                    roundedCorners: true,
+                    'https://www.youtube.com/watch?v=amScOfplXEw&feature=emb_logo',
+                videoImg: videos.raphael,
+                roundedCorners: true,
                 },
             },
             {
@@ -170,7 +168,7 @@ export const emails = [
             {
                 type: 'paragraph',
                 props: {
-                    text: `Hi [name], 
+                    text: `Hi [[user.first_name]], 
                         <br/><br/>
                         Congratulations on your new Premium account with CatholicMatch!
                         <br/><br/>
@@ -201,8 +199,7 @@ export const emails = [
                     header: 'Start meeting people that interest you!',
                     text:
                         'With unlimited messages and likes, you can initiate conversations with anyone at any time.',
-                    image:
-                        'https://image.freepik.com/free-vector/vintage-christmas-tree-with-gifts_23-2148759404.jpg',
+
                 },
             },
             {
@@ -211,8 +208,7 @@ export const emails = [
                     header: 'Discover who is interested in you!',
                     text:
                         'Now you can view your mutual likes and matches and choose who you want to get to know better.',
-                    image:
-                        'https://image.freepik.com/free-vector/vintage-christmas-tree-with-gifts_23-2148759404.jpg',
+
                 },
             },
             {
@@ -221,8 +217,7 @@ export const emails = [
                     header: 'Start searching for "the one"!',
                     text:
                         'By unlocking all of our advanced search filters, you can narrow down your results and start searching for someone you really like.',
-                    image:
-                        'https://image.freepik.com/free-vector/vintage-christmas-tree-with-gifts_23-2148759404.jpg',
+
                 },
             },
             {
@@ -231,8 +226,7 @@ export const emails = [
                     header: 'Get support faster!',
                     text:
                         'With prioritized support, you can get answers and assistance from our support team sooner.',
-                    image:
-                        'https://image.freepik.com/free-vector/vintage-christmas-tree-with-gifts_23-2148759404.jpg',
+
                 },
             },
         ],
@@ -244,7 +238,7 @@ export const emails = [
             {
                 type: 'title',
                 props: {
-                    text: 'Complete your profile',
+                    text: 'Complete your profile!',
                 },
             },
             {
@@ -257,7 +251,7 @@ export const emails = [
             {
                 type: 'paragraph',
                 props: {
-                    text: `Hi [name],
+                    text: `Hi [[user.first_name]],
                 <br/> <br/>
                 Before you can start meeting singles, you need to finish setting up your CatholicMatch profile.`,
                 },

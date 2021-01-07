@@ -1,4 +1,4 @@
-import { links, images } from '../shared/links';
+import { links, images, } from '../shared/links';
 export const emails = [
     {
         name: `Here's how to meet someone (no upgrade)`,
@@ -6,7 +6,7 @@ export const emails = [
         content: [
             {
                 type: 'title',
-                props: { text: `Here's how you can meet someone` },
+                props: { text: `Here's how you could attract someone...` },
             },
             {
                 type: 'image',
@@ -17,7 +17,7 @@ export const emails = [
             {
                 type: 'paragraph',
                 props: {
-                    text: `Hi [name], 
+                    text: `Hi [[user.first_name]], 
                 <br/><br/>
                 We know online dating isn't easy, but when you switch to CatholicMatch Premium, it becomes a whole lot easier! 
                 <br/><br/>
@@ -31,8 +31,6 @@ export const emails = [
                     header: 'Unlimited messages & likes!',
                     text:
                         'A Premium subscription gives you the opportunity to message anyone at any time, so you can reach out to members who interest you.',
-                    image:
-                        'https://image.freepik.com/free-vector/vintage-christmas-tree-with-gifts_23-2148759404.jpg',
                 },
             },
             {
@@ -41,8 +39,7 @@ export const emails = [
                     header: 'Mutual likes & matches!',
                     text:
                         'Knowing who is interested in YOU makes all the difference! View who liked your profile or matched with you, then decide if you want to get to know them better.',
-                    image:
-                        'https://image.freepik.com/free-vector/vintage-christmas-tree-with-gifts_23-2148759404.jpg',
+
                 },
             },
             {
@@ -52,8 +49,7 @@ export const emails = [
                     text:
                         'Start searching for the right person for you. With a Premium subscription, you unlock all search options and can narrow down your results to find your ideal match.',
                     imageOnRight: true,
-                    image:
-                        'https://image.freepik.com/free-vector/vintage-christmas-tree-with-gifts_23-2148759404.jpg',
+
                 },
             },
             {
@@ -63,8 +59,7 @@ export const emails = [
                     text:
                         'Get support faster! Our support team is here to help answer any questions you have or assist you in your search, so you can date better.',
                     imageOnRight: true,
-                    image:
-                        'https://image.freepik.com/free-vector/vintage-christmas-tree-with-gifts_23-2148759404.jpg',
+
                 },
             },
             {

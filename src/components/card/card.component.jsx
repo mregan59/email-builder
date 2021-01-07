@@ -7,6 +7,7 @@ import './card.styles.css';
 export const Card = ({ setEmail, email }) => {
     const linkRef = useRef(null);
     const copyRef = useRef(null);
+    const cardRef = useRef(null);
     useEffect(() => {
         console.log('email');
         console.log(email);

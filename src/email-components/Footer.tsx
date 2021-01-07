@@ -14,6 +14,9 @@ export const Footer: React.FC<FooterProps> = ({ style, containerStyle, }) => {
         margin: 12
     }
 
+    const footerTextStyle = { fontSize: 12, lineHeight: '16px', fontWeight: 300, color: '#aaa' };
+    const footerLinkStyle = { ...footerTextStyle, textDecoration: 'underline' };
+
     return (
         <BaseFooter style={{ ...defaultContainerStyle, ...containerStyle }}>
             <Container alignment="center">
@@ -35,10 +38,12 @@ export const Footer: React.FC<FooterProps> = ({ style, containerStyle, }) => {
                             <Image height={32} width={32} src="https://d2q86h5pvn46dj.cloudfront.net/emails/templates/youtube2x.png"></Image>
                         </Link>
                     </Column>
-                    <Column style={{ textAlign: 'center', fontSize: 12, lineHeight: '16px', fontWeight: 300, color: '#b0b0b0' }}>
-                        {`CatholicMatch is the premiere online service for single Catholics. To change the email notifications that you receive from us, sign in to http://www.catholicmatch.com and click on Account -> Email Settings.
-<br/>
-Our mailing address is: CatholicMatch, LLC PO Box 154 Zelienople, PA 16063`}
+                    <Column style={{ textAlign: 'center' }}>
+                        <Text style={footerTextStyle}>{`CatholicMatch is the premiere online service for single Catholics. To change the email notifications that you receive from us, sign in to `}</Text>
+                        <Link style={footerLinkStyle} href={'http://www.catholicmatch.com'}>http://www.catholicmatch.com</Link>
+                        <Text style={footerTextStyle}>{` and click on Account -> Email Settings.
+`}</Text><br /><Text style={footerTextStyle}>{`
+Our mailing address is: CatholicMatch, LLC PO Box 154 Zelienople, PA 16063`}</Text>
                     </Column>
                 </Row>
             </Container>

@@ -1,4 +1,4 @@
-import { links, images } from '../shared/links';
+import { links, images, videos } from '../shared/links';
 export const emails = [
     {
         name: `St. Raphael (everyone)`,
@@ -13,13 +13,13 @@ export const emails = [
             {
                 type: 'image',
                 props: {
-                    src: images.help,
+                    src: images.angels,
                 },
             },
             {
                 type: 'paragraph',
                 props: {
-                    text: `Dear [name],
+                    text: `Dear [[user.first_name]],
                     <br/> <br/>
                     Did you know St. Raphael is the patron saint of happy meetings?
                     <br/> <br/>
@@ -41,6 +41,7 @@ export const emails = [
                 type: 'video',
                 props: {
                     videoLink: `https://www.youtube.com/watch?v=amScOfplXEw&feature=emb_logo`,
+                    videoImg: videos.raphael,
                     roundedCorners: true,
                 },
             },

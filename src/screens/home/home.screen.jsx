@@ -12,6 +12,9 @@ import { emails as day10Emails } from '../../emails/day10';
 import { emails as day13Emails } from '../../emails/day13';
 import { FlexBox, Card } from '../../components';
 import './home.style.css';
+import { saveAs } from 'file-saver';
+import { renderHtml } from '../../base-components';
+import OnboardingTemplate from '../../templates/OnboardingTemplate';
 
 const days = [
     day1Emails,
@@ -24,6 +27,8 @@ const days = [
     day8Emails,
     day9Emails,
     day10Emails,
+    [],
+    [],
     day13Emails,
 ];
 
@@ -84,13 +89,46 @@ export const Home = ({ setEmail }) => {
         return <Card setEmail={setEmail} email={d}></Card>;
     });
 
+    function pause(msec) {
+        return new Promise(
+            (resolve, reject) => {
+                setTimeout(resolve, msec || 1000);
+            }
+        );
+    }
+
+    const downloadAll = async() => {
+        let dataArry = [];
+       days.forEach((d, index) => d.forEach((d2) => dataArry.push({day: index, email: d2})));
+       dataArry.forEach(async(d2, i ) =>{
+           setTimeout(()=>{
+            console.log(d2);
+            const email = d2.email;
+            const day = d2.day;
+
+            const html = renderHtml(OnboardingTemplate, {
+                lang: 'en',
+                data: email.content,
+            });
+            console.log('here')
+            var blob = new Blob([html], {type: "text/html;charset=utf-8"});
+            saveAs(blob, `day${day+1}_${email.name}.html`);
+
+           }, 300*i)
+
+        });
+
+    }
+
     return (
         <FlexBox flex1 row className="container">
+
             <FlexBox className="menu">
                 {allDays()}
                 {daysMenu}
             </FlexBox>
             <FlexBox row className="grid">
+            <div onClick={downloadAll}>Download All</div>
                 {emailGrid}
             </FlexBox>
         </FlexBox>
