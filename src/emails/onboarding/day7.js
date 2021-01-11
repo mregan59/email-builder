@@ -1,19 +1,20 @@
-import { links, images, videos } from '../shared/links';
+import { links, images, videos } from '../../shared/links';
+import { audience, subscription } from '../../shared/options.js';
 export const emails = [
     {
-        name: `St. Raphael (everyone)`,
-        forMembers: 'everyone',
+        name: `Rejection (everyone)`,
+        audience: audience.all,
+        subscription: subscription.both,
         content: [
             {
                 type: 'title',
-                props: {
-                    text: `Could you use a little <span class="highlight">Heavenly help</span>`,
-                },
+                props: { text: `Rejection is never fun...` },
             },
             {
                 type: 'image',
                 props: {
-                    src: images.angels,
+                    src: images.rejection,
+                    style: {width:200}
                 },
             },
             {
@@ -21,16 +22,16 @@ export const emails = [
                 props: {
                     text: `Dear [[user.first_name]],
                     <br/> <br/>
-                    Did you know St. Raphael is the patron saint of happy meetings?
+                    Rejection is never fun. But, it’s an unavoidable part of the dating process. No matter who you are or how you date...you’re going to be rejected sometimes. But, that’s okay. 
                     <br/> <br/>
-                    This makes him the perfect saint to intercede for you during your dating years. Many CatholicMatch users have turned to St. Raphael as they began their search for their future spouse.
+                    You may feel that if EVERYONE doesn’t love you, then NOBODY ever will, but, that’s just not true!
                     `,
                 },
             },
             {
                 type: 'title',
                 props: {
-                    text: `A novena to St. Raphael`,
+                    text: `The truth about rejection!`,
                     style: {
                         fontSize: 36,
                         lineHeight: '40px',
@@ -40,17 +41,15 @@ export const emails = [
             {
                 type: 'video',
                 props: {
-                    videoLink: `https://www.youtube.com/watch?v=amScOfplXEw&feature=emb_logo`,
-                    videoImg: videos.raphael,
+                    videoLink: `https://www.youtube.com/watch?v=Igi3Xh9ddv4`,
+                    videoImg: videos.rejection,
                     roundedCorners: true,
                 },
             },
             {
                 type: 'paragraph',
                 props: {
-                    text: `If you could use a little heavenly help, we recommend praying the St. Raphael Novena.
-                    <br/> <br/>
-                    Many of our success story couples credit this novena for supporting them during their single years and leading them to “the one”!
+                    text: `Don’t let your fear of rejection keep you from meeting your future spouse!
                         <br/> <br/>
                         Sincerely,
                         <br/> <br/>

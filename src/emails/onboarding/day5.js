@@ -1,9 +1,11 @@
-import { links, images } from '../shared/links';
+import { links, images } from '../../shared/links';
+import { audience, subscription } from '../../shared/options.js';
 
 export const emails = [
     {
         name: `Here's what to expect (everyone)`,
-        forMembers: 'Upgraded',
+        audience: audience.all,
+        subscription: subscription.premium,
         content: [
             {
                 type: 'title',

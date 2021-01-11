@@ -1,11 +1,12 @@
-import { links, images } from '../shared/links';
-
+import { links, images } from '../../shared/links';
+import { audience, subscription } from '../../shared/options.js';
 const image = images.dinner;
 
 export const emails = [
     {
         name: 'Date Better (upgraded)',
-        forMembers: 'Upgraded',
+        audience: audience.regular,
+        subscription: subscription.premium,
         content: [
             {
                 type: 'title',
@@ -80,7 +81,8 @@ export const emails = [
     },
     {
         name: 'Date Better (no upgrade)',
-        forMembers: 'Upgraded',
+        audience: audience.regular,
+        subscription: subscription.free,
         content: [
             {
                 type: 'title',
@@ -166,7 +168,8 @@ export const emails = [
     },
     {
         name: 'Date Better (divorced upgrade)',
-        forMembers: 'Upgraded',
+        audience: audience.divorced,
+        subscription: subscription.premium,
         content: [
             {
                 type: 'title',
@@ -242,7 +245,8 @@ export const emails = [
     },
     {
         name: 'Date Better (divorced no upgrade)',
-        forMembers: 'Upgraded',
+        audience: audience.divorced,
+        subscription: subscription.free,
         content: [
             {
                 type: 'title',
@@ -328,7 +332,8 @@ export const emails = [
     },
     {
         name: 'Date Better (seniors upgraded)',
-        forMembers: 'Upgraded',
+        audience: audience.seniors,
+        subscription: subscription.premium,
         content: [
             {
                 type: 'title',
@@ -403,7 +408,8 @@ export const emails = [
     },
     {
         name: 'Date Better (seniors no upgrade)',
-        forMembers: 'Upgraded',
+        audience: audience.seniors,
+        subscription: subscription.free,
         content: [
             {
                 type: 'title',

@@ -1,8 +1,10 @@
-import { links, images, videos } from '../shared/links';
+import { links, images, videos } from '../../shared/links';
+import { audience, subscription } from '../../shared/options.js';
 export const emails = [
     {
         name: 'Welcome',
-        forMembers: 'Upgraded',
+        audience: audience.all,
+        subscription: subscription.both,
         content: [
             {
                 type: 'title',
@@ -49,7 +51,8 @@ export const emails = [
     },
     {
         name: 'Getting Started (no upgrade)',
-        forMembers: 'Not Upgraded',
+        audience: audience.all,
+        subscription: subscription.free,
         content: [
             {
                 type: 'title',
@@ -103,7 +106,8 @@ export const emails = [
     },
     {
         name: 'Getting Started (upgraded)',
-        forMembers: 'Not Upgraded',
+        audience: audience.all,
+        subscription: subscription.premium,
         content: [
             {
                 type: 'title',
@@ -149,7 +153,8 @@ export const emails = [
     },
     {
         name: 'Online Dating Just Got Better',
-        forMembers: 'Upgraded',
+        audience: audience.all,
+        subscription: subscription.free,
         content: [
             {
                 type: 'title',
@@ -233,7 +238,8 @@ export const emails = [
     },
     {
         name: 'Complete Profile',
-        forMembers: null,
+        audience: audience.incompleteProfile,
+        subscription: subscription.both,
         content: [
             {
                 type: 'title',

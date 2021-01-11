@@ -1,9 +1,11 @@
-import { links, images, videos } from '../shared/links';
+import { links, images, videos } from '../../shared/links';
+import { audience, subscription } from '../../shared/options.js';
 
-const createEmail = ({ name, text, type, showUpgrade }) => {
+const createEmail = ({ name, text, type, showUpgrade, audience, subscription }) => {
     return {
         name: name,
-        forMembers: 'random',
+        audience: audience,
+        subscription: subscription,
         content: [
             {
                 type: 'title',
@@ -89,6 +91,8 @@ export const emails = [
         Their stories of finding love following a divorce can provide you with inspiration as you navigate the world of online dating. They will also remind you that your love story could be just around the corner…`,
         type: 'divorced',
         showUpgrade: true,
+        audience: audience.divorced,
+        subscription: subscription.free,
     }),
     createEmail({
         name: 'Success Stories (divorce upgraded)',
@@ -99,6 +103,8 @@ export const emails = [
         Their stories of finding love following a divorce can provide you with inspiration as you navigate the world of online dating. They will also remind you that your love story could be just around the corner…`,
         type: 'divorced',
         showUpgrade: false,
+        audience: audience.divorced,
+        subscription: subscription.premium,
     }),
     createEmail({
         name: 'Success Stories (seniors no upgrade)',
@@ -109,6 +115,8 @@ export const emails = [
         Their stories of finding love as an older single can provide you with inspiration as you navigate the world of online dating. They will also remind you that your love story could be just around the corner…`,
         type: 'seniors',
         showUpgrade: true,
+        audience: audience.seniors,
+        subscription: subscription.free,
     }),
     createEmail({
         name: 'Success Stories (seniors upgraded)',
@@ -119,6 +127,8 @@ export const emails = [
         Their stories of finding love as an older single can provide you with inspiration as you navigate the world of online dating. They will also remind you that your love story could be just around the corner…`,
         type: 'seniors',
         showUpgrade: false,
+        audience: audience.seniors,
+        subscription: subscription.premium,
     }),
     createEmail({
         name: 'Success Stories (no upgrade)',
@@ -129,6 +139,8 @@ export const emails = [
         Their stories can provide you with inspiration as you navigate the world of online dating. They will also remind you that your love story could be just around the corner...`,
         type: null,
         showUpgrade: true,
+        audience: audience.regular,
+        subscription: subscription.free,
     }),
     createEmail({
         name: 'Success Stories (upgraded)',
@@ -139,5 +151,7 @@ export const emails = [
         Their stories can provide you with inspiration as you navigate the world of online dating. They will also remind you that your love story could be just around the corner...`,
         type: null,
         showUpgrade: false,
+        audience: audience.regular,
+        subscription: subscription.premium,
     }),
 ];

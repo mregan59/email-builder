@@ -1,8 +1,10 @@
-import { links, images, videos } from '../shared/links';
+import { links, images, videos } from '../../shared/links';
+import { audience, subscription } from '../../shared/options.js';
 export const emails = [
     {
         name: `Dear Single Self (everyone)`,
-        forMembers: 'everyone',
+        audience: audience.all,
+        subscription: subscription.both,
         content: [
             {
                 type: 'title',

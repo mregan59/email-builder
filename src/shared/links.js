@@ -5,6 +5,7 @@ export const links = {
     home: 'https://www.catholicmatch.com/',
     subscribe: 'https://www.catholicmatch.com/subscribe/',
     editprofile: 'https://www.catholicmatch.com/editprofile/',
+    account: 'https://www.catholicmatch.com/account/',
     safety:
         'https://catholicmatch.zendesk.com/hc/en-us/sections/200560744-Safety',
     faqs:

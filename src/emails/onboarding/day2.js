@@ -1,8 +1,11 @@
-import { links, images, } from '../shared/links';
+import { links, images, } from '../../shared/links';
+import { audience, subscription } from '../../shared/options.js';
+
 export const emails = [
     {
         name: `Here's how to meet someone (no upgrade)`,
-        forMembers: 'no upgrade',
+        audience: audience.all,
+        subscription: subscription.free,
         content: [
             {
                 type: 'title',

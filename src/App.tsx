@@ -3,8 +3,8 @@ import logo from './logo.svg';
 import './App.css';
 import { renderHtml } from './base-components';
 import OnboardingTemplate from './templates/OnboardingTemplate';
-import { emails as day1Emails } from './emails/day1';
-import { emails as day2Emails } from './emails/day2';
+import { emails as day1Emails } from './emails/onboarding/day1';
+import { emails as day2Emails } from './emails/onboarding/day2';
 import { FlexBox } from './components';
 import { Home, EditEmail } from './screens';
 import {
